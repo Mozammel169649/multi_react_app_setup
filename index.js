@@ -7,9 +7,7 @@ server.set('views', './views')
 
 const port = 5001;
 server.get("/", function (req, res) {
-    return res.send(` 
-              <h2> hellow home </h2> 
-         `)
+    return res.render("frontend/layout/home");
 })
 
 server.get("/about", function (req, res) {
